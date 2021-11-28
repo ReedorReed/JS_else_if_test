@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JS else if test</title>
+</head>
+<body>
+    <label for="weather">Select the weather for today: </label>
+    <select id="weather">
+        <option value="">---Make a coice---</option>
+        <option value="sunny">Sunny</option>
+        <option value="rainy">Rainy</option>
+        <option value="cloudy">Cloudy howdy</option>
+        <option value="snowy">Snowy</option>
+    </select>
+
+    <p></p>
+<div class="weather_select">
+    <script>
+        const select = document.querySelector('select');
+        const para = document.querySelector('p');
+
+        let temperature = 29;
+
+        select.onchange = setWeather;
+
+        function setWeather(){
+            const choice = select.value;
+
+            if (choice === 'sunny') {
+                para.textContent = 'It is nice and sunny out! Enjoy an ice cold Coke!';
+            } else if(choice ==== 'rainy') {
+                para.textContent = 'It is rainy out! Enjoy a nice cup of coffee!';
+            } else if(choice === 'cloudy') {
+                para.textContent = 'It is cloudy out! Remember an umbrella ella ella!';
+            } else if(choice ==== 'snowy') {
+                para.textContent = 'It is snowy out! Remember to build a snowman!';
+            } else {
+                para.textContent '';
+            }
+        }
+    </script>
+    
+</div>
+
+</body>
+</html>
