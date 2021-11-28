@@ -1,9 +1,10 @@
 body {
-    background: blue;
+    margin-top: 200px;
+    background: coral;
+    text-align: center;
 }
 
-.weather_select {
-    display: flex;
-    justify-content: center;
-    align-content: center;
+
+p {
+    color: green;
 }

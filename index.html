@@ -18,7 +18,7 @@
     </select>
 
     <p></p>
-<div class="weather_select">
+<div class="w">
     <script>
         const select = document.querySelector('select');
         const para = document.querySelector('p');
@@ -27,19 +27,19 @@
 
         select.onchange = setWeather;
 
-        function setWeather(){
+        function setWeather() {
             const choice = select.value;
 
             if (choice === 'sunny') {
                 para.textContent = 'It is nice and sunny out! Enjoy an ice cold Coke!';
-            } else if(choice ==== 'rainy') {
+            } else if(choice === 'rainy') {
                 para.textContent = 'It is rainy out! Enjoy a nice cup of coffee!';
             } else if(choice === 'cloudy') {
                 para.textContent = 'It is cloudy out! Remember an umbrella ella ella!';
-            } else if(choice ==== 'snowy') {
+            } else if(choice === 'snowy') {
                 para.textContent = 'It is snowy out! Remember to build a snowman!';
             } else {
-                para.textContent '';
+                para.textContent = '';
             }
         }
     </script>
