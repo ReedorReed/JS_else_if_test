@@ -1,9 +1,16 @@
 body {
-    margin-top: 200px;
+    display: flex;
+    /* margin-top: 200px; */
     background: coral;
-    text-align: center;
+    /* text-align: center; */
+    flex-direction: column;
 }
-
+.w {
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+    align-content: center;
+}
 
 p {
     color: green;
